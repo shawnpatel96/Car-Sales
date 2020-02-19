@@ -10,7 +10,12 @@ const AddedFeatures = props => {
         <ol type="1">
           {props.car.features.map(item => (
             
-            <AddedFeature key={item.id} feature={item} removeFeature={props.removeFeature} />
+            <AddedFeature 
+            key={item.id} 
+            price={item.price} 
+            item={item} 
+            name={item.name} 
+            removeFeature={props.removeFeature} />
             
           ))}
         </ol>
